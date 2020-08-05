@@ -1,0 +1,39 @@
+apply plugin: 'com.github.dcendents.android-maven'
+
+group = 'com.iduyatech.dateutilsbibliotheque'
+
+install {
+    repositories.mavenInstaller {
+        pom {
+            project {
+                packaging 'aar'
+                groupId 'com.iduyatech.dateutilsbibliotheque'
+                artifactId 'dateUtils'
+                name 'libdate'
+                description 'Cette bibliothèque gère les dates.'
+                url 'https://github.com/lukangakevin/utilsdate'
+
+                licenses {
+                    license {
+                        name 'The Apache Software License, Version 2.0'
+                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+
+                developers {
+                    developer {
+                        id 'iduyaTech'
+                        name 'Kevin Lukanga'
+                        email 'kevinlukangalegend@gmail.com'
+                    }
+                }
+
+                scm {
+                    connection 'https://github.com/lukangakevin/utilsdate.git'
+                    developerConnection 'https://github.com/lukangakevin/utilsdate.git'
+                    url 'https://github.com/lukangakevin/utilsdate'
+                }
+            }
+        }
+    }
+}
